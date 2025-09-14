@@ -7,6 +7,7 @@ body{
 header{
     position: fixed;
     width: 100%;
+    z-index: 100;
     background-color: #121212;
     display: flex;
     justify-content: space-between;
@@ -144,7 +145,7 @@ width: 100px;
     transition: 0.2s;
 }
 
-/*--- brands ---*/
+/*--- Brands ---*/
 .brands{
     display: flex;
     justify-content: center;
@@ -164,4 +165,59 @@ width: 100px;
     filter: brightness(0) saturate(100%) invert(36%) sepia(100%) saturate(1000%) hue-rotate(90deg) brightness(100%) contrast(100%);
 }
 
+/*--- Carrousel ---*/
+.carrousel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #ddd;
+}
 
+.carrousel img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción original */
+    display: block;
+}
+
+.carrousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.5);
+    color: #121212;
+    border: none;
+    font-size: 1vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    padding: 0;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrousel .prev {
+    left: 40px;
+}
+
+.carrousel .next {
+    right: 40px;
+}
+
+/*====== FOOTER SECTION ======*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1vw 0;
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 0.9vw;
+    color: white;
+    height: 10vw;
+    background-color: #4CB036;
+}
