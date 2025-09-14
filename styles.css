@@ -146,19 +146,23 @@ width: 100px;
 }
 
 /*--- Brands ---*/
-.brands{
+.brands {
     display: flex;
     justify-content: center;
-    a {
-        box-sizing: border-box;
-        padding: 0.3vw 0vw;
-        margin: 0vw 1vw;
-        height: 2vw;
-        img{
-            height: 100%;
-            width: auto;
-        }
-    }
+}
+
+.brands a {
+    box-sizing: border-box;
+    padding: 0.3vw 0vw;
+    margin: 0vw 1vw;
+    height: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+.brands a img {
+    height: 100%;
+    width: auto;
 }
 
 .brands a:hover{
